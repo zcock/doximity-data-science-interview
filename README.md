@@ -1,45 +1,32 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Doximity's Data Scientist Assignment
+You are working for a large marketing firm that targets doctors based on their practice area. Your current campaign is targeting Cardiologists, and you are tasked with coming up with a list of doctors to contact.
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+You are given a file, **`physicians.csv`**, which contains a list of doctors and their unique specialty. You notice that there are a decent number of doctors with "Cardiology" as a specialty, but there are also quite a few doctors whose specialty is "Unknown". You wonder if any of these doctors might actually be Cardiologists.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+You find a public dataset, **`procedures.csv`**, which contains a list of procedures your doctors performed over the past year.
+The columns of this dataset are as follows:
 
----
+* **`physician_id`** unique physician identifier, joins to `id` in **`physicians.csv`**
+* **`procedure_code`** unique code representing a procedure
+* **`procedure`** description of the procedure performed
+* **`number_of_patients`** the number of patients the doctor performed that procedure on over the past year
 
-## Edit a file
+------------
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Using these procedure data, determine whether the pool of cardiologists can be increased. Down the road, the marketing firm may want to classify physicians under medical specialties other than cardiology (e.g., anesthesiology, neurology). Consider building a model for finding cardiologists as a first step toward this and advise on whether this approach may be reused for discerning these other specialties as well.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Both files can be found in this repository. Please submit all relevant code and write a detailed explanation of your methodology and results. Assume both a data scientist and a product manager will look over your results. We’re a Python shop - feel free to use any libraries you see fit.
 
----
+------------
 
-## Create a file
+## Submission instructions
 
-Next, you’ll add a new file to this repository.
+**Please follow all listed steps to ensure a prompt review of your submission by our data science hiring team:**
+1. Provide your Doximity point of contact with your GitLab username (create a new account if you do not already have one). Your point of contact will add you to the data challenge repository. Once you've been added to the repo, you should see in the Project tab the `data-science` project containing the challenge instructions.
+2. Fork the `data-science` repository.
+3. In the `data-science` project tab, click on `Members`. Under `Project members`, click on the `Add member` tab. Under `Select members to invite`, please type in `Doximity-data` and choose the `Developer` role permission. When done, click `Add to project`. *This will give us permissions to review your challenge submission when complete.*
+4. In the forked `data-science` project, create a new branch `lastname-firstname`. Work on the assignment and commit your changes to the `lastname-firstname` branch.
+5. When complete with the assignment, after having commit all your changes, create a new `Merge Request`. Add `Doximity-data` as an assignee. *This will trigger an email notification to our data scientists to review your submission.*
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+* For a visual walk-through of the submission process, please watch [this video](https://vimeo.com/227828054/562c3f6acf). 
+* If any questions come up, please send an email to your Doximity point of contact.
